@@ -1,0 +1,28 @@
+extend layout
+
+block content
+    h1.page-header
+        | PLEASE FILL THE AUTHENTICATION FORM BELOW !
+    form.form-signin(role='form', action='/', method='post')
+        h2.form-signin-heading
+            | You are one step away ! please sign in
+        if errors !== undefined && errors.msg !== undefined
+            p.bg-danger #{errors.msg}
+        label.sr-only(for='username') Username:#{' '}
+        if errors !== undefined && errors.user === true
+            input#username.form-control.has-error(type='text', name='username', pattern='[A-Za-z]{2,32}',
+            placeholder='Username',
+            required)
+        else
+            input#username.form-control(type='text', name='username', pattern='[A-Za-z]{2,32}',
+            placeholder='Username', required)
+        label.sr-only(for'password') Password:#{' '}
+        if errors !== undefined && errors.password === true
+            input#password.form-control.has-error(type='password', name='password', pattern='.{4,32}', placeholder='password',
+            required)
+        else
+            input#password.form-control(type='password', name='password', pattern='.{4,32}', placeholder='password',
+        required)
+        button.btb.btn-lg.btn-primary.btn-block(type='submit') Sign in
+    
+      

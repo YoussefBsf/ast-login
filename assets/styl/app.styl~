@@ -1,0 +1,88 @@
+.bgrd-img
+  background url(/img/logos/nodejs.png) no-repeat
+  
+  bottom 0
+  left 0
+  opacity .0
+  position fixed
+  right 0
+  top 0
+  z-index -1
+
+.bg-danger
+  border 1px solid #a40000
+  border-radius 5px
+  color #a40000
+  padding 10px 15px
+
+#header
+  .navbar-brand
+    margin-left 0
+    padding-bottom 0
+    padding-left 0
+    padding-top 0
+
+    img
+      height 50px
+      display inline-block
+
+
+
+#content
+  margin-top 50px
+
+.form-signin
+  max-width 330px
+  padding 15px
+  margin 0 auto
+
+  button
+    border none
+    height 44px
+    margin-top 20px
+
+  input
+    height 44px
+    margin-top 20px
+
+  .has-error
+    border-color #a40000
+
+#footer
+  background-color #000080
+  bottom 0
+  height 60px
+  left 0
+  position fixed
+  right 0
+  line-height 60px
+
+  .github-icon
+    margin 0
+    margin-left 20px
+    margin-top -5px
+
+  #github
+    float right
+    a
+      color inherit
+
+.github-icon
+  width 25px
+  height 25px
+
+.error-page
+  background linear-gradient(45deg, rgba(24, 68, 130, 1) 0%, rgba(21, 93, 166, 1) 53%, rgba(22, 113, 170, 1) 99%)
+  display table
+  height 100%
+  position fixed
+  text-align center
+  width 100%
+
+.error-page, .error-page h1, .error-page p
+  color #fff
+  text-shadow 1px 1px 2px rgba(43, 43, 43, 1)
+
+.error-msg
+  display table-cell
+  vertical-align middle
